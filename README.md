@@ -1,20 +1,9 @@
-<<<<<<< HEAD
 # yusry
 
-A new Flutter project.
+## Proposal
 
-## Getting Started
+I understand you need a simple Flutter mobile app that displays a small hardcoded list of static local data on one clean screen. I will build it with Flutter using clean, maintainable code, a modern Material Design UI, and a professional structure that is easy to review and submit. The app will be lightweight, fully offline, and delivered quickly without unnecessary complexity. I’ll focus on quality, readability, and a polished user experience so the final result is client-ready. Let’s discuss the details and I’ll get started.
 
-This project is a starting point for a Flutter application.
+## Summary
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# tasks_yusry
->>>>>>> 66de66972dc6354a19893c34ed7764f2aeb0b4d8
+This project is a simple Flutter mobile application that shows static local data from a hardcoded list on a single screen. I built a clean Material Design interface with an AppBar, a `ListView.builder`, and reusable UI components for each item. Each list item includes a title, description, and icon, and the app works fully offline with no API, database, Firebase, forms, or authentication.
