@@ -8,7 +8,7 @@ const List<LocalItem> localItems = [
     title: 'Project Planning',
     description: 'Organize milestones and keep the delivery focused.',
     icon: Icons.event_note_rounded,
-    accentColor: Color(0xFF1D4ED8),
+    accentColor: Color(0xFF155EEF),
   ),
   LocalItem(
     title: 'Design Review',
@@ -26,12 +26,12 @@ const List<LocalItem> localItems = [
     title: 'Quality Check',
     description: 'Verify the UI, layout, and behavior before delivery.',
     icon: Icons.verified_rounded,
-    accentColor: Color(0xFFB45309),
+    accentColor: Color(0xFFF59E0B),
   ),
   LocalItem(
     title: 'Client Handover',
     description: 'Package the project so it can be reviewed and submitted.',
     icon: Icons.rocket_launch_rounded,
-    accentColor: Color(0xFFDC2626),
+    accentColor: Color(0xFFEF4444),
   ),
 ];
