@@ -9,6 +9,10 @@ class ProductModel {
   final int reviewCount;
   final bool isFavorite;
   final bool isAvailable;
+  final List<String> images;
+  final List<String> options;
+  final Map<String, String> specifications;
+  final List<Map<String, dynamic>> reviews;
 
   const ProductModel({
     required this.id,
@@ -21,7 +25,14 @@ class ProductModel {
     required this.reviewCount,
     this.isFavorite = false,
     this.isAvailable = true,
+    this.images = const [],
+    this.options = const [],
+    this.specifications = const {},
+    this.reviews = const [],
   });
+
+  // Getter to ensure we always have at least one image in our list
+  List<String> get allImages => images.isEmpty ? [imageUrl] : images;
 
   ProductModel copyWith({
     String? id,
@@ -34,6 +45,10 @@ class ProductModel {
     int? reviewCount,
     bool? isFavorite,
     bool? isAvailable,
+    List<String>? images,
+    List<String>? options,
+    Map<String, String>? specifications,
+    List<Map<String, dynamic>>? reviews,
   }) {
     return ProductModel(
       id: id ?? this.id,
@@ -46,6 +61,11 @@ class ProductModel {
       reviewCount: reviewCount ?? this.reviewCount,
       isFavorite: isFavorite ?? this.isFavorite,
       isAvailable: isAvailable ?? this.isAvailable,
+      images: images ?? this.images,
+      options: options ?? this.options,
+      specifications: specifications ?? this.specifications,
+      reviews: reviews ?? this.reviews,
     );
   }
 }
+

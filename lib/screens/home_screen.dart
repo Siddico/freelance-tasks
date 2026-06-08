@@ -34,11 +34,12 @@ class _HomeScreenState extends State<HomeScreen> {
   // Available categories with icons
   final List<Map<String, dynamic>> _categories = [
     {'name': 'All', 'icon': Icons.grid_view_rounded},
-    {'name': 'Electronics', 'icon': Icons.devices_other_rounded},
-    {'name': 'Footwear', 'icon': Icons.brush_rounded}, // represents shoes/style
-    {'name': 'Accessories', 'icon': Icons.watch_rounded},
+    {'name': 'Footwear', 'icon': Icons.directions_run_rounded},
+    {'name': 'Supplements', 'icon': Icons.fitness_center_rounded},
+    {'name': 'Electronics', 'icon': Icons.watch_rounded},
+    {'name': 'Accessories', 'icon': Icons.backpack_rounded},
     {'name': 'Fashion', 'icon': Icons.checkroom_rounded},
-    {'name': 'Home', 'icon': Icons.home_max_rounded},
+    {'name': 'Equipment', 'icon': Icons.hardware_rounded},
   ];
 
   // Active Promo Banner Index for the carousel
@@ -48,25 +49,25 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Map<String, String>> _promos = [
     {
-      'title': 'Summer Super Sale',
-      'subtitle': 'Up to 50% Off on Premium Gadgets',
-      'code': 'SUMMER50',
+      'title': 'مهرجان اللياقة البدنية',
+      'subtitle': 'خصومات تصل إلى 40% على الأجهزة والمكملات',
+      'code': 'FIT40',
       'image':
-          'https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop',
     },
     {
-      'title': 'Trendy Footwear',
-      'subtitle': 'Step up your style with outdoor gear',
-      'code': 'STEPUP20',
+      'title': 'أحذية الجري الاحترافية',
+      'subtitle': 'انطلق بقوة مع تقنية الفوم المتطورة',
+      'code': 'RUN20',
       'image':
-          'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=800&auto=format&fit=crop',
     },
     {
-      'title': 'Smart Home Comforts',
-      'subtitle': 'Modernize your living space today',
-      'code': 'SMARTHOME',
+      'title': 'بناء العضلات الصافية',
+      'subtitle': 'أفضل المكملات والبروتينات بنقاء 100%',
+      'code': 'ISO100',
       'image':
-          'https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=800&auto=format&fit=crop',
     },
   ];
 
@@ -277,7 +278,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(width: 8),
             const Text(
-              'Siddiq SHOP',
+              'Sport Zone',
               style: TextStyle(
                 fontWeight: FontWeight.w900,
                 fontSize: 20,

@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import '../constants/colors.dart';
 
 import 'home_screen.dart';
 
@@ -8,10 +9,10 @@ class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<SplashScreen> createState() => _HomeScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen>
+class _HomeScreenState extends State<SplashScreen>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
   late final Animation<double> _scaleAnimation;
@@ -64,12 +65,11 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF0F172A), Color(0xFFFF6B00)],
+            colors: [AppColors.primary, AppColors.accent],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -87,46 +87,56 @@ class _SplashScreenState extends State<SplashScreen>
               mainAxisSize: MainAxisSize.min,
               children: [
                 Container(
-                  padding: const EdgeInsets.all(18),
+                  padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     color: Colors.white.withValues(alpha: 0.14),
                     borderRadius: BorderRadius.circular(28),
                     border: Border.all(
                       color: Colors.white.withValues(alpha: 0.18),
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.1),
+                        blurRadius: 20,
+                        offset: const Offset(0, 8),
+                      ),
+                    ],
                   ),
                   child: const Icon(
-                    Icons.shopping_bag_rounded,
+                    Icons.sports_soccer_rounded, // Sports icon
                     color: Colors.white,
-                    size: 54,
+                    size: 58,
                   ),
                 ),
-                const SizedBox(height: 18),
-                Text(
-                  'Siddiq SHOP',
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                const SizedBox(height: 20),
+                const Text(
+                  'Sport Zone',
+                  style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
-                    fontSize: 26,
+                    fontSize: 32,
                     letterSpacing: 1.5,
                   ),
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Preparing a premium shopping experience...',
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  'نصنع لك تجربة رياضية استثنائية...',
+                  textDirection: TextDirection.rtl,
+                  style: TextStyle(
                     color: Colors.white.withValues(alpha: 0.84),
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
-                const SizedBox(height: 22),
+                const SizedBox(height: 26),
                 SizedBox(
                   width: 180,
                   child: LinearProgressIndicator(
                     minHeight: 6,
                     borderRadius: BorderRadius.circular(999),
                     backgroundColor: Colors.white.withValues(alpha: 0.14),
-                    valueColor: AlwaysStoppedAnimation<Color>(
-                      theme.colorScheme.primary,
+                    valueColor: const AlwaysStoppedAnimation<Color>(
+                      Colors.white,
                     ),
                   ),
                 ),
@@ -138,3 +148,4 @@ class _SplashScreenState extends State<SplashScreen>
     );
   }
 }
+

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'core/theme.dart';
+import 'theme/theme.dart';
 import 'screens/splash_screen.dart';
 
 void main() {
@@ -14,9 +14,10 @@ class BasicNavigationApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Siddiq E-Commerce App',
+      title: 'Sport Zone',
       theme: buildAppTheme(),
       home: const SplashScreen(),
     );
   }
 }
+
