@@ -1,4 +1,4 @@
-package com.example.yusry
+package com.example.freelance
 
 import io.flutter.embedding.android.FlutterActivity
 

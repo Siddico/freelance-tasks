@@ -102,10 +102,11 @@ class _HomeScreenState extends State<SplashScreen>
                       ),
                     ],
                   ),
-                  child: const Icon(
-                    Icons.sports_soccer_rounded, // Sports icon
-                    color: Colors.white,
-                    size: 58,
+                  child: Image.asset(
+                    'assets/images/sport_zone.png',
+                    width: 58,
+                    height: 58,
+                    fit: BoxFit.contain,
                   ),
                 ),
                 const SizedBox(height: 20),

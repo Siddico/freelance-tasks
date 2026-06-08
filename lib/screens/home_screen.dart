@@ -271,20 +271,10 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
-              Icons.shopping_bag_rounded,
-              color: theme.colorScheme.primary,
-              size: 24,
-            ),
-            const SizedBox(width: 8),
-            const Text(
-              'Sport Zone',
-              style: TextStyle(
-                fontWeight: FontWeight.w900,
-                fontSize: 20,
-                letterSpacing: 1.2,
-                color: Color(0xFF0F172A),
-              ),
+            Image.asset(
+              'assets/images/sport_zone.png',
+              height: 32,
+              fit: BoxFit.contain,
             ),
           ],
         ),
@@ -468,10 +458,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                               child: Center(
-                                child: Icon(
-                                  Icons.shopping_bag_outlined,
-                                  color: Colors.white,
-                                  size: 80,
+                                child: Image.asset(
+                                  'assets/images/sport_zone.png',
+                                  width: 80,
+                                  height: 80,
+                                  fit: BoxFit.contain,
                                 ),
                               ),
                             );
@@ -1056,9 +1047,12 @@ class _HorizontalProductListTileState
                               widget.product.imageUrl,
                               fit: BoxFit.cover,
                               errorBuilder: (context, error, stackTrace) {
-                                return const Icon(
-                                  Icons.broken_image_rounded,
-                                  color: Color(0xFF94A3B8),
+                                return Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Image.asset(
+                                    'assets/images/sport_zone.png',
+                                    fit: BoxFit.contain,
+                                  ),
                                 );
                               },
                             ),

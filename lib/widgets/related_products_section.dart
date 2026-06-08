@@ -103,11 +103,12 @@ class _RelatedProductCard extends StatelessWidget {
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
                         color: AppColors.background,
-                        child: const Center(
-                          child: Icon(
-                            Icons.broken_image_rounded,
-                            color: AppColors.textLight,
-                            size: 28,
+                        child: Center(
+                          child: Image.asset(
+                            'assets/images/sport_zone.png',
+                            width: 28,
+                            height: 28,
+                            fit: BoxFit.contain,
                           ),
                         ),
                       );

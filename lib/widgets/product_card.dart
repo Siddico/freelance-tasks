@@ -88,10 +88,13 @@ class _ProductCardState extends State<ProductCard> {
                               errorBuilder: (context, error, stackTrace) {
                                 return Container(
                                   color: const Color(0xFFF1F5F9),
-                                  child: const Icon(
-                                    Icons.broken_image_rounded,
-                                    color: Color(0xFF94A3B8),
-                                    size: 32,
+                                  child: Center(
+                                    child: Image.asset(
+                                      'assets/images/sport_zone.png',
+                                      width: 32,
+                                      height: 32,
+                                      fit: BoxFit.contain,
+                                    ),
                                   ),
                                 );
                               },

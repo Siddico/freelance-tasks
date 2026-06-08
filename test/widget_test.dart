@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:yusry/main.dart';
+import 'package:freelance/main.dart';
 
 void main() {
   testWidgets('renders e-commerce splash, home and details screens', (WidgetTester tester) async {

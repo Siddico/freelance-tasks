@@ -55,6 +55,10 @@ class _ProductImageCarouselState extends State<ProductImageCarousel> {
               child: Image.network(
                 imageUrl,
                 fit: BoxFit.contain,
+                errorBuilder: (context, error, stackTrace) => Image.asset(
+                  'assets/images/sport_zone.png',
+                  fit: BoxFit.contain,
+                ),
               ),
             ),
             // Close Button
@@ -113,6 +117,10 @@ class _ProductImageCarouselState extends State<ProductImageCarousel> {
                         child: Image.network(
                           imagesList[index],
                           fit: BoxFit.cover,
+                          errorBuilder: (context, error, stackTrace) => Image.asset(
+                            'assets/images/sport_zone.png',
+                            fit: BoxFit.cover,
+                          ),
                           loadingBuilder: (context, child, progress) {
                             if (progress == null) return child;
                             return const Center(
@@ -280,6 +288,10 @@ class _ProductImageCarouselState extends State<ProductImageCarousel> {
                       child: Image.network(
                         imagesList[index],
                         fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) => Image.asset(
+                          'assets/images/sport_zone.png',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
