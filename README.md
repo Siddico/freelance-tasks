@@ -21,6 +21,9 @@ A highly polished, production-ready **Product Details Screen** for a premium spo
   - Hero image support & InteractiveViewer for image zoom.
   - Haptic feedback (vibrations) on user interactions.
 
+<img width="1920" height="1080" alt="sport zone" src="https://github.com/user-attachments/assets/62592a62-d826-4394-aacf-4bf8b329d32b" />
+
+
 ## 🧩 Modular Architecture
 
 The UI is broken down into small, highly reusable, and isolated custom widgets to keep the code perfectly clean:
